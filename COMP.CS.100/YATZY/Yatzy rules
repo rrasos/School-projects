@@ -1,0 +1,27 @@
+1. STARTING
+    - chose players from 1 to 4
+
+2.IN GAME
+    - in the left there is scoreboard
+    - over the score board is shown which column is whose
+    - under score board is total score
+    - right top is shown whose turn it is
+    - under that is how many point you have whit selected dices
+    - under dices is roll dices button,
+     also go to the next player by clicking that button
+    - under that there will pop up instruction while game goes on.
+
+3. DICES
+    - lock dices by clicking them
+    - lock all dices you want to select,
+        unselected ones dont count on score
+    - input your score after your turn on scoreboard.
+    - after inputting score the cell will close
+     and it cant be changed anymore
+
+4. SCORING
+    - game will tell what you got,
+    input score on scoreboard
+    -bonus? means you can but there any dices.
+    -Player who got highest score wins.
+

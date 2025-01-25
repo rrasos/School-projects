@@ -1,0 +1,23 @@
+Quagmire McDuck;120;-;-
+'Dirty' Dingus McDuck;120;-;-
+Molly Mallard;120;-;-
+Angus 'Pothole' McDuck;122;'Dirty' Dingus McDuck;Molly Mallard
+Fergus McDuck;122;'Dirty' Dingus McDuck;Molly Mallard
+Jake McDuck;122;'Dirty' Dingus McDuck;Molly Mallard
+Downy O'Drake;122;-;-
+Scrooge McDuck;124;Fergus McDuck;Downy O'Drake
+Matilda McDuck;124;Fergus McDuck;Downy O'Drake
+Hortense McDuck;124;Fergus McDuck;Downy O'Drake
+Gus Goose;125;-;-
+Luke Goose;123;-;-
+Grandma Duck;121;-;-
+Daphne Duck;123;-;Grandma Duck
+Quackmore Duck;123;-;Grandma Duck
+Gladstone Gander;125;Luke Goose;Daphne Duck
+Daisy Duck;126;-;-
+Donald Duck;126;Quackmore Duck;Hortense McDuck
+Thelma Duck;126;Quackmore Duck;Hortense McDuck
+Huey;100;-;Thelma Duck
+Dewey;100;-;Thelma Duck
+Louie;100;-;Thelma Duck
+Louie;100;-;Thelma Duck
