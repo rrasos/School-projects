@@ -1,0 +1,84 @@
+Instructions for Chess Game
+
+Overview
+This project implements a chess game with a graphical user interface (GUI) using Qt.
+The game allows two players to play chess, displaying the board and pieces.
+The game includes all standard chess pieces (pawn, rook, knight, bishop, queen, king)
+and their respective movement rules.
+
+---
+
+How the Code Works
+
+1. Main Components
+- 'MainWindow': The main GUI class that handles the chessboard display, user interactions, and game logic integration.
+- 'Chess': The core game logic class that manages the board state, turn-taking, and move validation.
+- 'ChessBoard': Represents the chessboard and manages the placement of pieces.
+- 'ChessPiece': An abstract base class for all chess pieces, defining common attributes and methods.
+- Piece Classes: Specific implementations for each chess piece (`Pawn`, `Rook`, `Knight`, `Bishop`, `Queen`, `King`) with their movement rules.
+
+---
+
+2. Game Initialization
+- The game starts in 'MainWindow' by calling 'chess_.start_game()', which initializes the board with all pieces in their starting positions.
+- after the game is initialized actual board in gui is initialized from GameBoard
+
+---
+
+3. GUI Layout
+- The chessboard is an 8x8 grid of 'QPushButton' widgets, each representing a square.
+- Each square displays the corresponding piece's image or remains empty if no piece is present.
+- Indicators (QLabel) are placed under buttons and they are 2px bigger -> used to indicate avaible moves and selected piece
+
+---
+
+4. Gameplay
+- Players take turns clicking on pieces and valid destination squares to make moves.
+- Piece Selection:
+  - Clicking on a piece highlights it in green and shows its valid moves in red.
+  - If a player clicks on an invalid square, the selection resets.
+  - clicking new piece (when another piece is already selected) selects it instantly 
+  - if trying to select wrong color piece info label turns red and resets on new click
+- Move Execution:
+  - Clicking on a valid square moves the selected piece to that square.
+  - Captured pieces are removed from the board.
+  - Special rules like pawn promotion are handled automatically.
+
+---
+
+5.Rules Enforcement
+- Each piece has a 'get_allowed_moves' method that calculates its valid moves based on its type and position.
+- The 'Chess' class ensures that moves are valid, the correct player's turn is enforced, and the game ends when a king is captured.
+
+---
+
+6. Game End
+- The game ends when one player's king is captured. The winner is displayed in the info label at the top of the GUI.
+pieces cannot be select anymore
+
+---
+
+How to Play the Game
+
+1. Start the Game:
+   - Run the program. The chessboard will appear with all pieces in their starting positions.
+   - The info label at the top will indicate whose turn it is (White starts).
+
+2. Make a Move:
+   - Click on a piece to select it. Valid moves will be highlighted in red.
+   - Click on a highlighted square to move the piece.
+   - If you want to select a different piece, click on it instead.
+
+3. Restart the Game:
+   - Click the "Restart" button at the top to reset the board and start a new game.
+
+4. Close the Game:
+   - Click the "Close" button to exit the application.
+
+---
+
+Special Rules
+- Pawn Promotion: When a pawn reaches the opposite end of the board, it is automatically promoted to a queen.
+- Game End: The game ends when a king is captured. The winner is displayed in the info label.
+
+
